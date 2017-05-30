@@ -96,14 +96,14 @@ public class HangmanDisplay extends JPanel
       lblEnterWord = new JLabel("<html><br>Player One, look away.</br>" +
          "<br>Player Two, enter a word.</br><br>(Between 4 and 20 characters)</br>", SwingConstants.LEFT);
       lblEnterWord.setFont(new Font("Arial", Font.PLAIN, 20));
-      lblEnterWord.setBounds(725, 12, 300, 85);
+      lblEnterWord.setBounds(725, 12, 300, 95);
       add(lblEnterWord);
       lblEnterWord.setVisible(false);
          
       txtEnterWord = new JTextField("", 7);
       txtEnterWord.setFont(new Font("Arial", Font.PLAIN, 20));
       txtEnterWord.setHorizontalAlignment(SwingConstants.LEFT);
-      txtEnterWord.setBounds(725, 112, 200, 25);
+      txtEnterWord.setBounds(725, 112, 200, 30);
       add(txtEnterWord);
       txtEnterWord.setVisible(false);
          
@@ -117,19 +117,19 @@ public class HangmanDisplay extends JPanel
       // Label, Textbox and Button for a players guess
       lblGuess = new JLabel("Guess Letter or Word", SwingConstants.CENTER);
       lblGuess.setFont(new Font("Arial", Font.PLAIN, 25));
-      lblGuess.setBounds(700, 200, 250, 25);
+      lblGuess.setBounds(700, 200, 250, 30);
       add(lblGuess);
       
       txtGuess = new JTextField("", 15);
       txtGuess.setFont(new Font("Arial", Font.PLAIN, 20));
       txtGuess.setHorizontalAlignment(SwingConstants.LEFT);
-      txtGuess.setBounds(725, 250, 200, 25);
+      txtGuess.setBounds(725, 250, 200, 30);
       add(txtGuess);
       
       btnGuess = new JButton("Guess");
       btnGuess.setFont(new Font("Arial", Font.PLAIN, 20));
       btnGuess.addActionListener(new ListenerGuess());
-      btnGuess.setBounds(750, 285, 150, 25);
+      btnGuess.setBounds(750, 285, 150, 30);
       add(btnGuess);
       btnGuess.setEnabled(false);
       
